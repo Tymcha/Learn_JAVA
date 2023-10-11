@@ -8,7 +8,16 @@ public class Main {
 
         System.out.println("Name: " + name + ",\t" +
                             "Age: " + age + ",\t" +
-                            "Weighht: " + weight);
+                            "Weighht: " + weight + "\n");
 
+        int a = 1;
+        int b = 2;
+        int c;
+        System.out.println("a = " + a + ",\t" + "b = " + b);
+
+        c = b;
+        b = a;
+        a = c;
+        System.out.println("a = " + a + ",\t" + "b = " + b);
     }
 }
