@@ -17,5 +17,7 @@ public class Main {
             System.out.print(array[i] + " ");
         }
 
+        float[] arrayFloat = {0.2f, 1.63f, 9.51f, 10.3f, 5.55f};
+
     }
 }
