@@ -19,5 +19,15 @@ public class Main {
 
         float[] arrayFloat = {0.2f, 1.63f, 9.51f, 10.3f, 5.55f};
 
+        byte byt = 2;
+        short sh = 10;
+        int num = 55;
+        int[] arr = {byt, sh, num};
+        for (int i = 0; i < arr.length - 1 ; i++) {
+            System.out.println(arr[i]);
+        }
+
+
+
     }
 }
