@@ -19,31 +19,25 @@ public class Main {
     }
 
     private static int sumOfDigits(int number) {
-        // Make sure the number is positive
         number = Math.abs(number);
 
         int sum = 0;
 
         while (number > 0) {
-            int digit = number % 10;  // Get the last digit
-            sum += digit;             // Add the last digit to the sum
-            number /= 10;             // Remove the last digit
+            int digit = number % 10;
+            sum += digit;
+            number /= 10;
         }
         return sum;
     }
 
-
     private static int getNumberOffibonacciSeries(int n) {
-        int a = 0;
-        int b = 1;
-        int c = 0;
-        for (int i = 2; i <= n; i++) {
-            c = a + b;
-            a = b;
-            b = c;
+        if (n <= 1) {
+            return n;
+        } else {
+            return getNumberOffibonacciSeries(n - 1) + getNumberOffibonacciSeries(n - 2);
         }
-        return c;
-    }
+}
 }
 
 
