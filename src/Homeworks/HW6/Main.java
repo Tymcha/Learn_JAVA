@@ -12,7 +12,7 @@ public class Main {
         System.out.println("The sum is " + result);
 
         int resultFid;
-        int n = 11;
+        int n = 12;
         resultFid = getNumberOffibonacciSeries(n);
         System.out.println(resultFid);
 
@@ -31,13 +31,25 @@ public class Main {
         return sum;
     }
 
+//    private static int getNumberOffibonacciSeries(int n) {
+//        if (n <= 1) {
+//            return n;
+//        } else {
+//            return getNumberOffibonacciSeries(n - 1) + getNumberOffibonacciSeries(n - 2);
+//        }
+//    }
+
     private static int getNumberOffibonacciSeries(int n) {
-        if (n <= 1) {
-            return n;
-        } else {
-            return getNumberOffibonacciSeries(n - 1) + getNumberOffibonacciSeries(n - 2);
+        int a = 0;
+        int b = 1;
+        int c;
+        for (int j = 2; j <= n; j++) {
+            c = a + b;
+            b = a;
+            a = c;
         }
-}
+        return a;
+    }
 }
 
 
