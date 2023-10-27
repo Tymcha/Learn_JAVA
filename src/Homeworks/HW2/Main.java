@@ -1,22 +1,35 @@
 package Homeworks.HW2;
 
+import static java.util.Collections.swap;
+
 public class Main {
     public static void main(String[] args) {
-        String stringAll = "First,Second,Third,Fifth,Fourth,Sixth,Eighth,Seventh,Ninth";
-        String[] stringArray = stringAll.split (",");
-        String buff;
+        int age = 20;
+        float weight = 70f;
+        String name = "Andriy";
 
-        buff = stringArray[3];
-        stringArray[3] = stringArray[4];
-        stringArray[4] = buff;
+        System.out.println("Name: " + name + ",\t" +
+                            "Age: " + age + ",\t" +
+                            "Weighht: " + weight + "\n");
 
-        buff = stringArray[6];
-        stringArray[6] = stringArray[7];
-        stringArray[7] = buff;
+        int a = 1;
+        int b = 2;
+        int c;
+        System.out.println("a = " + a + ",\t" + "b = " + b);
 
-        for (int i = 0; i < stringArray.length; i++) {
-            System.out.println(stringArray[i]);
-        }
+        c = b;
+        b = a;
+        a = c;
+        System.out.println("a = " + a + ",\t" + "b = " + b);
+
+        int k = 5;
+        int l = 10;
+        System.out.println("k = " + k + ",\t" + "l = " + l);
+
+        k = k ^ l;
+        l = k ^ l;
+        k = k ^ l;
+        System.out.println("k = " + k + ",\t" + "l = " + l);
 
     }
 }
